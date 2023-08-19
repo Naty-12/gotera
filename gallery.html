@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Trusted data analytics services in Ethiopia">
+  
+  <title>Gotera Analytics</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <div class="logo">
+    <img src="photo.png" alt="Gotera Analytics"> 
+  </div>
+  
+  <button class="menu-btn">&equiv;</button>
+
+<nav>
+  <ul class="menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="gallery.html">Galleries</a></li>
+    <li><a href="blogs.html">Blogs</a></li>
+    <li><a href="services.html">What we do</a></li>
+    <li><a href="team.html">Team</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+  <main>
+
+ <section class="gallery">
+
+  <h2>Gallery</h2>
+  
+  <div class="product-selector">
+
+    <div class="frame">
+
+      <div class="center">
+
+        <div class="pagination">
+        
+          <input type="radio" name="product" id="product-1" checked>
+          <label for="product-1">Survey</label>
+
+          <input type="radio" name="product" id="product-2">
+          <label for="product-2">Data Management</label>
+        
+          <input type="radio" name="product" id="product-3">
+          <label for="product-3">AI</label>
+
+          <input type="radio" name="product" id="product-4">
+          <label for="product-4">Consultancy</label>
+        
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+ 
+
+  </main>
+
+  
+  <footer>
+  
+  <div class="footer-content">
+    <p>Contact us: info@goteraanalytics.com | Phone: +251-912-689332</p>
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; Gotera Analytics 2023. All rights reserved.</p>
+    <p>Business Hours: Mon-Fri 9:00 AM - 5:00 PM</p>
+  </div>
+  </footer>
+<script src="script.js"></script>
+<script>
+const menu = document.querySelector('.menu')
+const menuBtn = document.querySelector('.menu-btn')
+
+  menuBtn.addEventListener('click', () => {
+  menu.classList.toggle('active')  
+})
+</script>
+</body>
+</html>

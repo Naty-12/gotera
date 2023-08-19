@@ -1,0 +1,578 @@
+root {
+  --primary: #FF8C00; /* Strong orange color */
+  --secondary: #FFA500; /* Lighter shade of orange */
+  --text-color: #fff; /* White text color */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* header section --------------------------------------*/
+header {
+  background-color: #001F3F;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.logo img {
+  height: 300px; /* Increased for larger logo */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+}
+
+.logo {
+  position: relative;
+  top: 20px; /* Add spacing from the top edge */
+  left: 0; /* Move the logo to the left */
+}
+
+.header-content {
+background-color:  #001F3F
+  ;}
+
+.contact{ color: white;
+}
+nav {
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-right: 10px; /* Add a margin between menu items */
+  padding-left: 10px;
+  padding-right: 10px; 
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+/* Increase specificity to target the menu items */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+}
+ 
+  nav li {
+  padding: 15px;
+  position: relative;
+}
+/* hero section ---------------------------------------*/
+.hero {
+  background-image: url("dt.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .content {
+  background: rgba(255,255,255,0.8);
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* team -----------------------------------------*/
+
+#team {
+  text-align: center;
+  background-color: #f2f2f2; /* Set the background color to gray */
+  padding: 30px;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; 
+}
+
+.member h3 {
+  margin: 10px 0;
+}
+.member p {
+  font-size: 14px;
+}
+.team .member img {
+  max-width: 80%;
+}
+.services,.team {
+    flex-direction: column;
+  }
+/* blogs section -------------------------------------------*/
+
+.articles {
+  display: flex;
+  justify-content: flex-end; 
+}
+/* about section --------------------------------------------*/
+
+#about{
+  font-family: 'Montserrat', sans-serif;
+  background: url(home.png) no-repeat left;
+  background-size: 50%;
+  background-color: #70e9cf;
+  overflow: hidden;
+}
+
+.inner-container{
+  width: 50%;
+  float: right;
+  background-color: #70e9cf;
+  padding: 10px;
+}
+
+.inner-container h1{
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text{
+  color: #050505;
+  line-height: 30px;
+  text-align: justify;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+/* Styling for the services section container----------------------- */
+#services {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  background-image: url("ist.jpg");
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+}
+#services h2 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: black; /* Change the color to black (#000) */
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-weight: 700;
+}
+
+#services h3 {
+	font-family: 'Pacifico', cursive;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: darkblue; /* Change the color to black (#000) */
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-weight: 700; /* Use the bold version (700) of the Montserrat font */
+}
+.services {
+  display: flex;
+  max-width: 1000px;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.service p
+{ color: red;
+}
+.service-container {
+	display: none;
+  text-align: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+.service-container:first-child {
+  display: block;
+}
+.sub-services li {
+    width: 100%;
+  }
+  
+.service-container img {
+  width: 2000px; /* Increase the image width to your desired size */
+  margin-bottom: 10px;
+}
+
+.service-container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.service-container p {
+  line-height: 1.6;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red; 
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: blue;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: blue;
+}
+.sub-services {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap; 
+  justify-content: center;
+  margin-top: 30px;
+}
+.sub-services li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 0; /* Adjust spacing between sub-services */
+  margin-bottom: 10px; /* Adjust spacing between rows */
+  border: none; /* Add a thicker border around each sub-service */
+  padding: 10px; /* Increase the padding inside the frame */
+  width: 200px; /* Add a fixed width to make them equal */
+}
+
+.sub-services img {
+  width: 200px; 
+  height: 200px; 
+  margin-right: 10px; 
+}
+.sub-services p {
+  font-size: 16px; 
+  color: black; 
+  margin-top: 10px; 
+  font-family: 'Montserrat', sans-serif; /* Use the Montserrat font */
+  font-weight: 700;
+}
+.dots span.active {
+  background-color: black;
+}
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/*footer syle -----------------------------------*/
+
+footer {
+  background: #001F3F;
+  color: #fff;
+  padding: 2rem;
+  font-size: 14px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content {
+  flex-basis: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-links {
+  flex-basis: 50%;
+  text-align: left;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer-business-hours {
+  flex-basis: 50%;
+  text-align: right;
+}
+
+/* Gallery Section *-----------------------------------------------*/
+
+.gallery {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 3rem;
+}
+
+/*contact us section ------------------------------------------*/
+
+#contactus {
+  background-color: rgb(117, 116, 124); /* Light gray background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#contactus h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-reason,
+.contact-info,
+.contact-form {
+  flex: 1;
+  padding: 20px;
+  background-color: rgb(117, 116, 124);
+  border: none;
+}
+
+.contact-form:hover,
+.btn:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Style the submit button */
+.btn {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+/* mobile display----------------------------------------------- */
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #001F3F;
+  padding: 2rem;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+
+.menu.active {
+  transform: translateX(0);
+}
+.menu li {
+  padding: 0.1rem 0; /* Adjust the padding to decrease spacing */
+}
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: rgb(243, 236, 236);
+  cursor: pointer;
+  display: block; /* Show the mobile icon by default */
+  position: absolute;
+  top: 0rem; /* Adjust the top value to position the icon */
+  right: 0rem; /* Adjust the right value to position the icon */
+}
+
+/* show only on mobile screen -----------------------------------------*/
+
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    position: static;
+    width: auto;
+    height: auto;
+    transform: none;
+    background: none; /* Remove background for desktop */
+    padding: 0; /* Remove padding for desktop */
+  }
+
+  .menu li {
+    padding: 0 1rem; 
+  }
+
+  .menu-btn {
+    display: none; /* Hide mobile icon on desktop */
+  }
+}
+
+@media (max-width: 768px) {
+	.logo {
+  position: top;
+  top: 0; /* Add spacing from the top edge */
+  left: 0; /* Move the logo to the left */
+}
+	.logo img {
+  height: 300px; /* Increased for larger logo */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 100%; /* Prevent overflow */
+}
+  .menu-btn {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+
+.hero {
+padding: 2rem 1rem;
+}
+
+.hero h2 {
+font-size: 1.5rem;
+}}
+
+/* team section ------------------------------*/
+@media (max-width: 1000px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 600px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* blogs -----------------------------------------*/
+@media (max-width: 768px) {
+ 
+  #blogs {
+    text-align: center; /* Center-align heading */
+  }
+
+  #blogs h2 {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+
+  .articles {
+	  width: 100%;
+  }
+}
+/* Contact -----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  
+  .contact-reason,
+  .contact-info,
+  .contact-form {
+    border: none; 
+    padding: 15px; 
+  }
+  .contact-form {width:270px;
+  }
+}
+
+/* about section ----------------------*/
+@media screen and (max-width:768px){
+  #about{
+      padding: 0;
+  }
+  .inner-container{
+      padding: 50px;
+  }
+}
